@@ -1,0 +1,20 @@
+.item {
+    color: #3b52ff;
+    border-style: double;
+    border-width: 4px;
+    border-color: #b2b9b7;
+    border-radius: 10px;
+    width: 300px;
+    padding: 4px;
+    margin: 10px 0px 10px 20px;
+}
+.item img {
+    width: 60px;
+    padding-left: 20px;
+}
+.item span {
+    padding-left: 20px;
+}
+.message {
+    margin: 20px;
+}

@@ -1,0 +1,12 @@
+.content {
+    display: grid;
+    grid-template-areas: "info info" "posts posts";
+    grid-template-rows: 270px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.info {
+    grid-area: info;
+}
+.posts {
+    grid-area: posts;
+}

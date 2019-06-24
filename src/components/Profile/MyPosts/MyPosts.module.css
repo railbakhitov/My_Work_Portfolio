@@ -1,0 +1,15 @@
+.text {
+    padding-left: 20px;;
+}
+.text h3 {
+    padding-left: 80px;
+}
+.text textarea {
+    width: 235px;
+}
+.text button {
+    margin-left: 85px;
+}
+.posts {
+    margin-top: 20px    ;
+}

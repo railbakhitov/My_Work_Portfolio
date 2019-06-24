@@ -1,0 +1,35 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.dialogItems {
+    padding-left: 15px;
+}
+.dialog a{
+    text-decoration-line: none;
+}
+.messages {
+
+}
+.message {
+
+}
+.item {
+    display: grid;
+    grid-template-columns: 70px 200px;
+}
+.item img{
+    margin: 10px 1px 3px 8px;
+    width: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    border-color: #2d56b9;
+}
+.name {
+    padding-left: 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
