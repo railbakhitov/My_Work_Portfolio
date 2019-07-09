@@ -1,4 +1,6 @@
-import {renderEntireTree} from "../render";
+let renderEntireTree = () => {
+    console.log('State changed');
+}
 
 let state = {
     dialogsPage: {
@@ -24,11 +26,11 @@ let state = {
     sidebar: {
         friendsList: ['Валерия', 'Кирилл', 'Лилия', 'Анна', 'Борис', 'Эмиль'],
     }
-}
+};
 
 window.state = state;
 
-export let addPost = () => {
+export const addPost = () => {
     let newPost = {
         id: 3,
         message: state.profilePage.newPostText,
@@ -37,11 +39,15 @@ export let addPost = () => {
     state.profilePage.posts.push(newPost);
     state.profilePage.newPostText = '';
     renderEntireTree(state);
-}
+};
 
-export let updateChangePost = (newText) => {
+export const updateChangePost = (newText) => {
     state.profilePage.newPostText = newText;
     renderEntireTree(state);
+};
+
+export const subscribe = (observer) => {
+    renderEntireTree = observer;
 }
 
 export default state;
